@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folie PVC - PVC Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans">
+    <!-- Header and Navigation -->
+    <header class="bg-white shadow-md fixed top-0 w-full z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">PVC Solutions</a>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-blue-600 transition duration-300">Strona Główna</a>
+                    <a href="folie-pvc.html" class="text-blue-600 font-medium">Folie PVC</a>
+                    <a href="panele-pvc.html" class="hover:text-blue-600 transition duration-300">Panele PVC</a>
+                    <a href="o-nas.html" class="hover:text-blue-600 transition duration-300">O Nas</a>
+                    <a href="nagrody.html" class="hover:text-blue-600 transition duration-300">Nagrody</a>
+                    <a href="kontakt.html" class="hover:text-blue-600 transition duration-300">Kontakt</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu hidden md:hidden mt-4">
+                <a href="index.html" class="block py-2 px-4 text-sm hover:text-blue-600 transition duration-300">Strona Główna</a>
+                <a href="folie-pvc.html" class="block py-2 px-4 text-sm text-blue-600 font-medium">Folie PVC</a>
+                <a href="panele-pvc.html" class="block py-2 px-4 text-sm hover:text-blue-600 transition duration-300">Panele PVC</a>
+                <a href="o-nas.html" class="block py-2 px-4 text-sm hover:text-blue-600 transition duration-300">O Nas</a>
+                <a href="nagrody.html" class="block py-2 px-4 text-sm hover:text-blue-600 transition duration-300">Nagrody</a>
+                <a href="kontakt.html" class="block py-2 px-4 text-sm hover:text-blue-600 transition duration-300">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="pt-24">
+        <section class="relative bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+            <div class="container mx-auto px-6 py-20">
+                <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Folie PVC</h1>
+                    <p class="text-lg md:text-xl mb-8">Najwyższej jakości folie PVC do różnorodnych zastosowań. Odkryj nasze produkty dostosowane do potrzeb branży meblowej, budowlanej i wielu innych.</p>
+                </div>
+            </div>
+            <div class="wave-bottom absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-[60px]">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Product Categories Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4" data-aos="fade-up">Nasze Folie PVC</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Oferujemy szeroki wybór folii PVC dostosowanych do różnych wymagań i zastosowań.</p>
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-4 mb-10" data-aos="fade-up" data-aos-delay="200">
+                    <button class="filter-btn active bg-blue-600 text-white px-6 py-2 rounded-full transition duration-300" data-filter="all">Wszystkie</button>
+                    <button class="filter-btn bg-gray-200 hover:bg-gray-300 px-6 py-2 rounded-full transition duration-300" data-filter="meble">Meblowe</button>
+                    <button class="filter-btn bg-gray-200 hover:bg-gray-300 px-6 py-2 rounded-full transition duration-300" data-filter="budowlane">Budowlane</button>
+                    <button class="filter-btn bg-gray-200 hover:bg-gray-300 px-6 py-2 rounded-full transition duration-300" data-filter="przemyslowe">Przemysłowe</button>
+                </div>
+                
+                <!-- Products Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-item meble transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="images/pvc-film-1.jpg" alt="Folia meblowa PVC" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                    <a href="#" class="bg-white text-blue-600 hover:bg-blue-600 hover:text-white py-2 px-4 rounded-full transition duration-300">Zobacz szczegóły</a>
+                                </div>
+                            </div>
+                            <div class="product-details p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Folia Meblowa Premium</h3>
+                                <p class="text-gray-600 mb-4">Wysokiej jakości folia PVC do mebli kuchennych i gabinetowych, odporna na zarysowania i promieniowanie UV.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-2">
+                                        <span class="color-swatch active" style="background-color: #FFFFFF;" data-color-name="Biały"></span>
+                                        <span class="color-swatch" style="background-color: #8B4513;" data-color-name="Brązowy"></span>
+                                        <span class="color-swatch" style="background-color: #D3D3D3;" data-color-name="Szary"></span>
+                                    </div>
+                                    <span class="text-blue-600 font-medium">Więcej kolorów &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-item budowlane transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="images/pvc-film-2.jpg" alt="Folia budowlana PVC" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                    <a href="#" class="bg-white text-blue-600 hover:bg-blue-600 hover:text-white py-2 px-4 rounded-full transition duration-300">Zobacz szczegóły</a>
+                                </div>
+                            </div>
+                            <div class="product-details p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Folia Budowlana Ultra</h3>
+                                <p class="text-gray-600 mb-4">Wytrzymała folia PVC do zastosowań w budownictwie, odporna na warunki atmosferyczne i uszkodzenia mechaniczne.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-2">
+                                        <span class="color-swatch active" style="background-color: #D3D3D3;" data-color-name="Szary"></span>
+                                        <span class="color-swatch" style="background-color: #000000;" data-color-name="Czarny"></span>
+                                        <span class="color-swatch" style="background-color: #A9A9A9;" data-color-name="Antracyt"></span>
+                                    </div>
+                                    <span class="text-blue-600 font-medium">Więcej kolorów &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-item przemyslowe transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="images/pvc-film-3.jpg" alt="Folia przemysłowa PVC" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                    <a href="#" class="bg-white text-blue-600 hover:bg-blue-600 hover:text-white py-2 px-4 rounded-full transition duration-300">Zobacz szczegóły</a>
+                                </div>
+                            </div>
+                            <div class="product-details p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Folia Przemysłowa Heavy</h3>
+                                <p class="text-gray-600 mb-4">Specjalistyczna folia PVC do zastosowań przemysłowych, odporna na chemikalia i wysokie temperatury.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-2">
+                                        <span class="color-swatch active" style="background-color: #ADD8E6;" data-color-name="Jasny niebieski"></span>
+                                        <span class="color-swatch" style="background-color: #FFFF00;" data-color-name="Żółty"></span>
+                                        <span class="color-swatch" style="background-color: #FF0000;" data-color-name="Czerwony"></span>
+                                    </div>
+                                    <span class="text-blue-600 font-medium">Więcej kolorów &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-item meble transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                        <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="images/pvc-film-4.jpg" alt="Folia meblowa drewnopodobna" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                    <a href="#" class="bg-white text-blue-600 hover:bg-blue-600 hover:text-white py-2 px-4 rounded-full transition duration-300">Zobacz szczegóły</a>
+                                </div>
+                            </div>
+                            <div class="product-details p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Folia Drewnopodobna</h3>
+                                <p class="text-gray-600 mb-4">Folia PVC imitująca naturalne drewno, idealna do mebli i wykończenia wnętrz, dostępna w różnych odcieniach.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-2">
+                                        <span class="color-swatch active" style="background-color: #DAA520;" data-color-name="Dąb"></span>
+                                        <span class="color-swatch" style="background-color: #8B4513;" data-color-name="Orzech"></span>
+                                        <span class="color-swatch" style="background-color: #D2B48C;" data-color-name="Brzoza"></span>
+                                    </div>
+                                    <span class="text-blue-600 font-medium">Więcej kolorów &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="product-item budowlane transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+                        <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="images/pvc-film-5.jpg" alt="Folia izolacyjna PVC" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                    <a href="#" class="bg-white text-blue-600 hover:bg-blue-600 hover:text-white py-2 px-4 rounded-full transition duration-300">Zobacz szczegóły</a>
+                                </div>
+                            </div>
+                            <div class="product-details p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Folia Izolacyjna</h3>
+                                <p class="text-gray-600 mb-4">Specjalistyczna folia PVC do izolacji budynków, hydrofobowa i odporna na działanie wilgoci.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-2">
+                                        <span class="color-swatch active" style="background-color: #87CEEB;" data-color-name="Błękitny"></span>
+                                        <span class="color-swatch" style="background-color: #FFFFFF;" data-color-name="Biały"></span>
+                                        <span class="color-swatch" style="background-color: #000000;" data-color-name="Czarny"></span>
+                                    </div>
+                                    <span class="text-blue-600 font-medium">Więcej kolorów &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="product-item przemyslowe transition-all duration-300" data-aos="fade-up" data-aos-delay="600">
+                        <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="images/pvc-film-6.jpg" alt="Folia ochronna PVC" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                    <a href="#" class="bg-white text-blue-600 hover:bg-blue-600 hover:text-white py-2 px-4 rounded-full transition duration-300">Zobacz szczegóły</a>
+                                </div>
+                            </div>
+                            <div class="product-details p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Folia Ochronna</h3>
+                                <p class="text-gray-600 mb-4">Trwała folia PVC do ochrony powierzchni podczas prac budowlanych i przemysłowych, łatwa w aplikacji.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-2">
+                                        <span class="color-swatch active" style="background-color: transparent; border: 1px solid #ccc;" data-color-name="Transparentny"></span>
+                                        <span class="color-swatch" style="background-color: #ADD8E6;" data-color-name="Jasny niebieski"></span>
+                                        <span class="color-swatch" style="background-color: #FFFFE0;" data-color-name="Kremowy"></span>
+                                    </div>
+                                    <span class="text-blue-600 font-medium">Więcej kolorów &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4" data-aos="fade-up">Zastosowania</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Nasze folie PVC są wykorzystywane w różnych branżach, oferując trwałe i estetyczne rozwiązania.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Application 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="h-48 overflow-hidden">
+                            <img src="images/application-furniture.jpg" alt="Zastosowanie w meblarstwie" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Meblarstwo</h3>
+                            <p class="text-gray-600">Folie PVC stosowane jako wykończenie frontów meblowych, blatów i innych elementów wyposażenia wnętrz. Dostępne w różnych wzorach, w tym imitujących drewno, kamień czy metal.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Application 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-48 overflow-hidden">
+                            <img src="images/application-building.jpg" alt="Zastosowanie w budownictwie" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Budownictwo</h3>
+                            <p class="text-gray-600">Folie PVC używane jako materiały wykończeniowe, izolacyjne i ochronne w budownictwie. Idealne do okien, drzwi, elewacji i izolacji dachów.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Application 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                        <div class="h-48 overflow-hidden">
+                            <img src="images/application-industry.jpg" alt="Zastosowanie w przemyśle" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Przemysł</h3>
+                            <p class="text-gray-600">Specjalistyczne folie PVC dla przemysłu, gdzie wymagana jest odporność na działanie czynników chemicznych, wysokie temperatury i obciążenia mechaniczne.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4" data-aos="fade-up">Galeria realizacji</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Zobacz przykłady wykorzystania naszych folii PVC w różnych projektach.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="150">
+                        <img src="images/gallery-1.jpg" alt="Realizacja 1" class="w-full h-64 object-cover rounded-lg">
+                        <div class="overlay rounded-lg">
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-2">Fronty meblowe</h4>
+                                <p class="text-sm">Folia PVC o wykończeniu matowym</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/gallery-2.jpg" alt="Realizacja 2" class="w-full h-64 object-cover rounded-lg">
+                        <div class="overlay rounded-lg">
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-2">Blaty kuchenne</h4>
+                                <p class="text-sm">Folia PVC imitująca kamień</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="250">
+                        <img src="images/gallery-3.jpg" alt="Realizacja 3" class="w-full h-64 object-cover rounded-lg">
+                        <div class="overlay rounded-lg">
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-2">Okna PVC</h4>
+                                <p class="text-sm">Folia dekoracyjna na okna</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                        <img src="images/gallery-4.jpg" alt="Realizacja 4" class="w-full h-64 object-cover rounded-lg">
+                        <div class="overlay rounded-lg">
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-2">Drzwi wewnętrzne</h4>
+                                <p class="text-sm">Folia PVC drewnopodobna</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="350">
+                        <img src="images/gallery-5.jpg" alt="Realizacja 5" class="w-full h-64 object-cover rounded-lg">
+                        <div class="overlay rounded-lg">
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-2">Izolacja budynku</h4>
+                                <p class="text-sm">Folia izolacyjna PVC</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                        <img src="images/gallery-6.jpg" alt="Realizacja 6" class="w-full h-64 object-cover rounded-lg">
+                        <div class="overlay rounded-lg">
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-2">Wykończenie ścian</h4>
+                                <p class="text-sm">Folia dekoracyjna ścienna</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 7 -->
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="450">
+                        <img src="images/gallery-7.jpg" alt="Realizacja 7" class="w-full h-64 object-cover rounded-lg">
+                        <div class="overlay rounded-lg">
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-2">Przemysł spożywczy</h4>
+                                <p class="text-sm">Folia PVC antybakteryjna</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 8 -->
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+                        <img src="images/gallery-8.jpg" alt="Realizacja 8" class="w-full h-64 object-cover rounded-lg">
+                        <div class="overlay rounded-lg">
+                            <div class="text-center">
+                                <h4 class="text-xl font-semibold mb-2">Zadaszenia</h4>
+                                <p class="text-sm">Transparentna folia PVC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-blue-600 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Potrzebujesz folii PVC?</h2>
+                <p class="text-xl mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Skontaktuj się z nami, aby omówić swoje potrzeby i uzyskać indywidualną ofertę dostosowaną do Twojego projektu.</p>
+                <a href="kontakt.html" class="bg-white text-blue-600 hover:bg-gray-100 py-3 px-10 rounded-lg font-medium text-lg transition duration-300 inline-block" data-aos="fade-up" data-aos-delay="200">Skontaktuj się z nami</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PVC Solutions</h3>
+                    <p class="mb-4 text-gray-400">Specjalista w produkcji paneli PVC oraz folii PVC ogólnego użytku.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Szybkie linki</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Strona Główna</a></li>
+                        <li><a href="folie-pvc.html" class="text-gray-400 hover:text-white transition duration-300">Folie PVC</a></li>
+                        <li><a href="panele-pvc.html" class="text-gray-400 hover:text-white transition duration-300">Panele PVC</a></li>
+                        <li><a href="o-nas.html" class="text-gray-400 hover:text-white transition duration-300">O Nas</a></li>
+                        <li><a href="nagrody.html" class="text-gray-400 hover:text-white transition duration-300">Nagrody</a></li>
+                        <li><a href="kontakt.html" class="text-gray-400 hover:text-white transition duration-300">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontakt</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>ul. Przemysłowa 1, 00-001 Warszawa</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <span>+48 123 456 789</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>kontakt@pvcsolutions.pl</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Godziny pracy</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Poniedziałek - Piątek: 8:00 - 16:00</li>
+                        <li>Sobota: 9:00 - 13:00</li>
+                        <li>Niedziela: Zamknięte</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 PVC Solutions. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

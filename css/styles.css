@@ -1,0 +1,259 @@
+/* Custom Styles */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Animation for wave */
+.wave-bottom {
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-bottom svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+/* Header/Nav styles */
+header {
+    transition: all 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Image hover effects */
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Custom animation durations */
+[data-aos] {
+    transition-duration: 800ms;
+}
+
+/* Button hover effects */
+.btn-hover-effect {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-hover-effect:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -2;
+}
+
+.btn-hover-effect:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.btn-hover-effect:hover:before {
+    width: 100%;
+}
+
+/* Contact form styles */
+.input-focus-effect {
+    position: relative;
+}
+
+.input-focus-effect input,
+.input-focus-effect textarea {
+    padding: 10px 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #e2e8f0;
+    background-color: transparent;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-focus-effect label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #a0aec0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-focus-effect input:focus,
+.input-focus-effect textarea:focus,
+.input-focus-effect input:not(:placeholder-shown),
+.input-focus-effect textarea:not(:placeholder-shown) {
+    border-bottom-color: #3182ce;
+}
+
+.input-focus-effect input:focus + label,
+.input-focus-effect textarea:focus + label,
+.input-focus-effect input:not(:placeholder-shown) + label,
+.input-focus-effect textarea:not(:placeholder-shown) + label {
+    top: -12px;
+    left: 0;
+    font-size: 0.75rem;
+    color: #3182ce;
+}
+
+/* Awards section */
+.award-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Product card styles */
+.product-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.product-card .product-details {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .product-details {
+    transform: translateY(-5px);
+}
+
+/* Team member cards */
+.team-member-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.team-member-card .social-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.team-member-card:hover .social-links {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Color swatches for product pages */
+.color-swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.color-swatch:hover {
+    transform: scale(1.1);
+}
+
+.color-swatch.active {
+    border-color: #3182ce;
+    transform: scale(1.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3182ce;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2c5282;
+}
+
+/* Product filtering animation */
+.product-item {
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+    transform: scale(1);
+}
+
+.product-item.scale-95 {
+    transform: scale(0.95);
+}
+
+.product-item.scale-100 {
+    transform: scale(1);
+}
+
+.product-item {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.product-item.opacity-0 {
+    opacity: 0;
+} 

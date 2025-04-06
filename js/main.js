@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
 
             const formData = new FormData(contactForm);
-            const response = await fetch("https://formigo-mails.vercel.app/api/form/3b87b891-91d0-4683-ac61-fdf5f25a1514", {
+            const response = await fetch("https://formigo-mails.vercel.app/api/form/03176086-3326-4304-b74d-653d809aabad", {
                 method: 'POST',
                 body: formData,
                 headers: {

@@ -47,16 +47,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('#contact-form');
     
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
+
+            const formData = new FormData(contactForm);
+            const response = await fetch("https://formigo-mails.vercel.app/api/form/3b87b891-91d0-4683-ac61-fdf5f25a1514", {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
             
-            let valid = true;
+            let valid = false;
             const nameInput = contactForm.querySelector('#name');
             const emailInput = contactForm.querySelector('#email');
             const messageInput = contactForm.querySelector('#message');
             
             // Reset error states
             clearErrors();
+            if (response.ok) {
+                valid = true;
+            }
             
             // Simple validation
             if (!nameInput.value.trim()) {
@@ -93,6 +105,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     alert('Formularz został wysłany. Dziękujemy!');
                     contactForm.reset();
+                }
+            } else {
+                // Show error message if form is invalid
+                const errorMessage = document.querySelector('#error-message');
+                if (errorMessage) {
+                    errorMessage.classList.remove('hidden');
+                    setTimeout(() => {
+                        errorMessage.classList.add('hidden');
+                    }, 5000);
                 }
             }
         });
